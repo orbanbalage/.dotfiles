@@ -1,0 +1,8 @@
+Google.Chrome
+Mozilla.Firefox
+Brave.Brave
+Microsoft.PowerShell
+Microsoft.VisualStudioCode
+TheDocumentFoundation.LibreOffice
+Git.Git
+GitHub.cli

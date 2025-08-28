@@ -1,0 +1,13 @@
+# moved from .zshrc on 2022-11-23
+alias dateUTC='date +"%Y-%m-%d %H:%M:%S"'
+alias ytdl='yt-dlp --cookies ~/www.youtube.com_cookies.txt --remote-components ejs:github'
+alias ytdls='yt-dlp --cookies ~/www.youtube.com_cookies.txt --remote-components ejs:github --sleep-requests 3 --sleep-interval 10'
+alias ytdla='ytdl -f 251 --remote-components ejs:github'
+alias gdlxid='gallery-dl --filesize-min 30K --directory $id "r:$x/$id" --filter "not re.search(r'\''(?i)webm'\'', extension) and not re.search(r'\''(?i)precomposed|md|xs|sm|xl'\'', filename) and not re.search(r'\''(?i)precomposed|md|xs|sm'\'', path)"'
+alias iapdf='ia download --glob="*.pdf"'
+alias brewfresh='brew update && brew outdated && brew upgrade && brew cleanup'
+alias bi='brew install'
+alias gitlog="git log --graph --all --pretty='format:%C(auto)%h %C(cyan)%ar %C(auto)%d %C(magenta)%an %C(auto)%s'"
+alias francinette=/Users/orbanbalage/francinette/tester.sh
+alias paco=/Users/orbanbalage/francinette/tester.sh
+alias ccc='cc -Wall -Wextra -Werror'

@@ -1,0 +1,34 @@
+sudo mv brcmfmac43602-pcie.txt "brcmfmac43602-pcie.Apple Inc.-MacBookPro14,3.txt"
+
+/lib/firmware/brcm
+
+cat /lib/firmware/brcm/brcmfmac43602-pcie.Apple\ Inc.-MacBookPro14\,3.txt
+
+
+
+balazs-macbookpro143:[borban]:~$ dmesg | grep brcm
+[    2.501214] usbcore: registered new interface driver brcmfmac
+[    2.625487] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43602-pcie for chip BCM43602/2
+[    2.627181] brcmfmac 0000:03:00.0: Direct firmware load for brcm/brcmfmac43602-pcie.Apple Inc.-MacBookPro14,3.txt failed with error -2
+[    2.891746] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43602-pcie for chip BCM43602/2
+[    2.891776] brcmfmac: brcmf_c_process_clm_blob: no clm_blob available (err=-2), device may have limited channels available
+[    2.892486] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM43602/2 wl0: Nov 10 2015 06:38:10 version 7.35.177.61 (r598657) FWID 01-ea662a8c
+[    3.170778] bluetooth hci0: Direct firmware load for brcm/BCM.hcd failed with error -2
+[    3.170780] Bluetooth: hci0: BCM: Patch brcm/BCM.hcd not found
+[   12.890173] ieee80211 phy0: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+
+
+jepp, mukodik:
+(mert amikor nem volt semmi se, akkor 2x error volt. Direct firmware load -MBP14,3, es aztan csak pcie.txt. most beraktuk elsobe a Mac-et es mukodik.
+
+
+balazs-macbookpro143:[borban]:~$ dmesg | grep brcm
+[    2.330417] usbcore: registered new interface driver brcmfmac
+[    2.452327] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43602-pcie for chip BCM43602/2
+[    2.718212] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43602-pcie for chip BCM43602/2
+[    2.718235] brcmfmac: brcmf_c_process_clm_blob: no clm_blob available (err=-2), device may have limited channels available
+[    2.719028] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM43602/2 wl0: Nov 10 2015 06:38:10 version 7.35.177.61 (r598657) FWID 01-ea662a8c
+[    3.124850] bluetooth hci0: Direct firmware load for brcm/BCM.hcd failed with error -2
+[    3.124852] Bluetooth: hci0: BCM: Patch brcm/BCM.hcd not found
+[   17.890812] ieee80211 phy0: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+balazs-macbookpro143:[borban]:~$ 
