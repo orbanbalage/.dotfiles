@@ -1,0 +1,5 @@
+clang
+vim
+git
+gh
+python
