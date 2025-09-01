@@ -3,3 +3,4 @@ vim
 git
 gh
 python
+less
