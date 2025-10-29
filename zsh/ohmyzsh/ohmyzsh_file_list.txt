@@ -1,0 +1,2 @@
+$ZSH_CUSTOM/aliases.zsh
+$ZSH_CUSTOM/functions.zsh
