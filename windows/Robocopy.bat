@@ -1,0 +1,1 @@
+Robocopy.exe "F:\" "D:\" /E /ZB /MT:8 /R:3 /W:5 /log+:Robocopy.log /tee
